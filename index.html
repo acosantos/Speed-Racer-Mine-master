@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Speed Racer</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+  <script src="./lib/p5.play.js"></script>
+
+  <!-- O SDK principal do Firebase JS é sempre necessário e deve ser listado primeiro -->
+  <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-database.js"></script>
+
+  <!-- TODO: Adicionar SDKs para produtos Firebase que você deseja usar
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+
+  <script>
+    // A configuração do Firebase do seu aplicativo da web
+    const firebaseConfig = {
+      apiKey: "AIzaSyC2TSOhsmXFZbRe3Zx59K9wuwSSekwesXc",
+      authDomain: "speed-racer-ca641.firebaseapp.com",
+      databaseURL: "https://speed-racer-ca641-default-rtdb.firebaseio.com",
+      projectId: "speed-racer-ca641",
+      storageBucket: "speed-racer-ca641.appspot.com",
+      messagingSenderId: "995257301233",
+      appId: "1:995257301233:web:d5e24ca94c6c8befc19150"
+    };
+
+    // Inicialize o Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <script src="js/form.js"></script>
+  <script src="js/game.js"></script>
+  <script src="js/player.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+  <script src="sketch.js"></script>
+</body>
+
+</html>
