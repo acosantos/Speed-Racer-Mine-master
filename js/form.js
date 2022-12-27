@@ -4,6 +4,7 @@ class Form {
     this.buttonImg = createImg("./assets/images/start.png");
     this.greetings = createElement("h2");
     this.greetings2 = createElement("h2");
+    
 
   }
 

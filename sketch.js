@@ -6,6 +6,7 @@ var car1img, car2img, car3img, car4img;
 var bgimg, trackimg;
 var allPlayers;
 var endBg;
+var blastImg;
 
 
 function preload() {
@@ -16,6 +17,7 @@ function preload() {
   car4img = loadImage("./assets/images/car4.png");
   trackimg = loadImage("./assets/images/track.png");
   endBg = loadImage("./assets/images/leaderboard1.png");
+  blastImg = loadImage("./assets/images/blast.png");
 }
 
 function setup() {

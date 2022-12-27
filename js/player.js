@@ -7,6 +7,7 @@ class Player {
     this.rank = 0
     this.distance = 0
     this.rotation = 0
+    this.blast = false
 
   }
   getCount() {
@@ -36,6 +37,8 @@ class Player {
       positionY: this.positionY,
       rank: this.rank,
       distance: this.distance,
+      rotation: this.rotation,
+      blast: this.blast
     })
   }
   static getPlayerInfo() {
@@ -47,14 +50,17 @@ class Player {
     if (keyIsDown(UP_ARROW)) {
       this.positionY -= 10
       this.distance += 10
+      this. rotation = 0
       this.update()
     }
     if (keyIsDown(LEFT_ARROW)) {
       this.positionX -= 5
+      this.rotation = -25
       this.update()
     }
     if(keyIsDown(RIGHT_ARROW)){
       this.positionX += 5
+      this.rotation = 25
       this.update()
     }
 
@@ -68,6 +74,8 @@ class Player {
       positionY: this.positionY,
       rank: this.rank,
       distance: this.distance,
+      rotation: this.rotation,
+      blast: this.blast
     })
   }
   getCarsAtEnd(){
